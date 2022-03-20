@@ -1,0 +1,119 @@
+.containert
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #08022A;
+    flex-wrap: wrap;
+    margin:  40px 0;
+}
+
+.containert .cardt
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* background: rgba(255, 255, 255, 0.05); */
+    margin: 0;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2); border-radius: 15px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+}
+
+.containert .cardt .contentt{
+
+    position: relative; 
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+    flex-direction: column; 
+    opacity: 0.5; 
+    transition: 0.5s;
+}
+
+.containert .cardt:hover .contentt{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.containert .cardt .contentt .imgBxt {
+    position: relative; 
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
+    border: 10px solid #08022A;
+}
+
+.containert .cardt .contentt .imgBxt img{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.containert .cardt .contentt .contentBxt  h3{
+    color:#fff;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center; 
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.containert .cardt .contentt .contentBxt h3 span {
+
+    font-size: 12px;
+    font-weight: 300; 
+    text-transform: initial;
+}
+
+.containert .cardt .sci{
+    align-items: center;
+    position: absolute;
+    bottom: 50px; 
+    display: flex;
+    top: 320px;
+    left: 45px;
+}
+
+.containert .cardt .sci  li{
+    List-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s; 
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.containert .cardt:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.containert .cardt .sci li a{
+
+    color: #fff; 
+    font-size: 24px;
+}
+
+@media (max-width:629px) {
+    .containert .card {
+        margin-left: 30px;
+    }
+    .containert .card .sci  li{
+        opacity: 1;
+    }
+}
+

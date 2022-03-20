@@ -1,0 +1,77 @@
+.containero
+{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background: #08022A;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.containero .cardo
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2); border-radius: 15px;
+    display: flex; 
+    justify-content: left;
+    align-items: left; 
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+}
+
+.containero .cardo .contento{
+
+    position: relative; 
+    display: flex; 
+    justify-content: left;  
+    align-items: left; 
+    flex-direction: column; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.containero .cardo:hover .contento{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.containero .cardo .contento .imgOuto {
+    position: relative; 
+    width: 300px;
+    height: 180px;
+}
+
+.containero .cardo .contento .imgOuto img{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 180px; 
+    border-radius: 10px;
+    opacity: 1; 
+}
+
+
+.containero .cardo .contento .contentBxo{
+    padding: 20px;
+    padding-top: 100px;
+    text-align: left; 
+}
+.containero .cardo .contento .contentBxo  h3{
+
+    margin-top: 90px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.1em;
+}
+
+
+
